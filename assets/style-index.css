@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Oswald';
+}
+body {
+    background-color: rgb(17, 17, 27);
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.container {
+    max-width: 1140px;
+    margin: auto;
+}
+
+
+/*--------------menu-------------*/
+.container.head {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(19, 19, 31);
+    border-bottom: 1px solid #ffffff;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 25px;
+    border-bottom: 3px solid rgb(19, 19, 31);
+    color: #fff;
+    font-family:'Oswald';
+    font-weight:600;
+    cursor: pointer;
+}
+.button:hover {
+    border-bottom: 5px solid #fff;
+}
+.button-aside {
+    display: flex;
+}
+
+/*--------------menu-end-------------*/
+
+
+
+/*--------------Home-banner-------------*/
+.container.banner {
+    display: flex;
+    background-color: rgb(19, 19, 31);
+}
+.home-left,
+.home-right {
+    flex: 1;
+    margin: auto;
+}
+.home-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home-left h1 {
+    font-size: 700;
+    color: #fff;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.home-left p{
+    margin-left: 35px;
+    font-weight: 600;
+    font-size: 20px;
+    color: blueviolet;
+} 
+.home-left p span{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(0, 204, 255);
+} 
+.home-left p span:nth-child(2) {
+    color: rgb(255, 0, 85);
+}
+.home-left p span:nth-child(3) {
+    color: rgb(255, 238, 0);
+}
+.home-left p span:nth-child(4) {
+    color: rgb(0, 4, 240);
+}
+.home-left p span:nth-child(5) {
+    color: rgb(30, 255, 0);
+}
+.home--links {
+    display: flex;
+    justify-content: center;
+}
+.home--links img{
+    height: 40px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+.home-right {
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../assets/images/desktop-source-code-wallpaper-computer-language-codi-desktop-source-code-technology-background-developer-124424262.jpg);
+    background-position: center;
+}
+.home-right img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+
+    border: 1px solid #fff;
+    border-radius: 650px;
+}
+/*--------------Home-banner-end-------------*/
+
+
+
+
+/*--------------about-------------*/
+.container.about {
+    border: 2px solid #fff;
+    background-color: rgba(58, 0, 133, 0.062);
+}
+.about-text {
+    margin: 50px;
+    color: #ffffff;
+}
+.about-text h1{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.about-text p{
+    color: #b9b9b9;
+    font-size: 18px;
+    font-weight: 600;
+    word-spacing: 4px;
+    line-height: 28px;
+}
+/*--------------about-end-------------*/
+
+
+/*--------------project--------------*/
+.container.project {
+    background-color:rgb(19, 19, 31);
+    height: 410px;
+}
+
+.project-title h1 {
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    font-size: 40px;
+}
+.project-grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto;
+    gap: 10px;
+}
+.project{
+    width: 200px;
+    height: 200px;
+    background-color: rebeccapurple;
+}
+/*--------------project-end-------------*/
+
+
+/*--------------footer--------------*/
+footer {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(31, 31, 31);
+    color: #5c5c5c;
+    text-align: center;
+    font-size: 10px;
+}
+/*--------------footer-end-------------*/
+
+
+
+
+
+
+
+/*--------------Responsive--------------*/
+@media screen and (max-width: 800px)  {
+    .container.banner {
+        flex-direction:column ;
+    }
+    .home-left {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .home-right  {
+        background-image: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 50px;
+    }
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .container.project {
+        height: 620px;
+    }
+}
+@media screen and (max-width: 475px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    .container.project {
+        height: 1250px;
+    }
+}
+/*--------------Responsive-end-------------*/
