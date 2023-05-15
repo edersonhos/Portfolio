@@ -21,30 +21,23 @@ a {
 
 
 /*--------------menu-------------*/
-.container.head {
-    display: flex;
-    justify-content: space-between;
+.bgMenu {
     background-color: rgb(19, 19, 31);
-    border-bottom: 1px solid #ffffff;
-}
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding:20px 25px;
-    border-bottom: 3px solid rgb(19, 19, 31);
-    color: #fff;
     font-family:'Oswald';
     font-weight:600;
-    cursor: pointer;
 }
-.button:hover {
-    border-bottom: 3px solid #fff;
+.navLink {
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: var(--bs-nav-link-font-weight);
+    color: #fff;
+    font-family:'Oswald';
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
-.button-aside {
-    display: flex;
-}
-
 /*--------------menu-end-------------*/
 
 
@@ -223,7 +216,7 @@ footer {
     }
     .home-right  {
         background-image: none;
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom: 20px;
         padding-bottom: 50px;
     }

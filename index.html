@@ -3,92 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=0, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/style-index.css">
-    <title>Ederson-HOS</title>
+    <link rel="icon" type="image/x-icon" href="./media/icon.png">
+    <title>Portifolio</title>
+    
 
 </head>
 <body>
-    <!-- -------menu------ -->
-    <header>
-        <div class="container head">
-            <div class="button"><a href="">Home</a></div>
-            <div class="button-aside">
-                <div class="button"><a href="">About</a></div>
-                <div class="button"><a href="">Projects</a></div>
+
+<!-- -------menu------ -->
+<header>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid bgMenu" style="max-width: 1140px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navLink" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navLink" aria-current="page" href="#about">About-us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navLink" href="#projeto">Projects</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
-    <!-- -------menu-end------ -->
+    </nav>
+</header>
+<!-- -------menu-end------ -->
 
-    <!-- -------HomeBanner------ -->
-    <section class="container banner">
-        <div class="home-left">
-            <div class="home--text">
-                <h1>" Ederson Henrique<br>Oliveira Santos "</h1>
-                <p>Full-Stack /<span>HTML</span><span>CSS</span><span>JS</span><span>React</span><span>Node</span></p>
-                <div class="home--links">
-                    <a href="https://www.linkedin.com/in/ederson-henrique-70b645262/" target="_blank"><img src="assets/images/linkedin.png" alt="Linkedim"></a>
-                    <a href="https://github.com/edersonhos?tab=projects" target="_blank"><img src="assets/images/github.png" alt="Github"></a>
-                </div>
+<!-- -------HomeBanner------ -->
+<section class="container banner">
+    <div class="home-left">
+        <div class="home--text">
+            <h1>" Ederson Henrique<br>Oliveira Santos "</h1>
+            <p>Full-Stack /<span>HTML</span><span>CSS</span><span>JS</span><span>React</span><span>Node</span></p>
+            <div class="home--links">
+                <a href="https://www.linkedin.com/in/ederson-henrique-70b645262/" target="_blank"><img src="assets/images/linkedin.png" alt="Linkedim"></a>
+                <a href="https://github.com/edersonhos?tab=projects" target="_blank"><img src="assets/images/github.png" alt="Github"></a>
             </div>
         </div>
-        <div class="home-right">
-            <div class="home--img">
-                <img src="media/retouch_1680199203514.JPEG" alt="img.png">
-            </div>
+    </div>
+    <div class="home-right">
+        <div class="home--img">
+            <img src="media/retouch_1680199203514.JPEG" alt="img.png">
         </div>
-    </section>
-    <!-- -------HomeBanner-end------ -->
-    
-    <!-- -------About------- -->
-    <section>
-        <div class="container about">
-            <div class="about-text">
-                <h1>22-05-2005 Jacarei-São Paulo-Brasil</h1>
-                <p>
-                    Ederson Henrique Oliveira santos, 18 anos progamador, desde pequeno sempre fui uma criança curiosa, que gostava muito de explorar e saber mais sobre as coisas em voltar, e desde pequeno sempre fui apaixonado em tecnologia e filmes de ficção cientifica, como gostava muito de jogar também comecei querer entender como eles funcionam, eh assim descobri o mundo como desenvolvedor me apaixonei por ele, por isso me tornei um desenvolvedor para ajudar as pessoas atraves da tecnologia!
-                </p>
-            </div>
+    </div>
+</section>
+<!-- -------HomeBanner-end------ -->
+
+<!-- -------About------- -->
+<section id="about">
+    <div class="container about">
+        <div class="about-text">
+            <h1>22-05-2005 Jacarei-São Paulo-Brasil</h1>
+            <p>
+                Ederson Henrique Oliveira santos, 18 anos progamador web front end, curso nubank html css java react 
+                bootstrap git github scrum ux ui desing, curso b7web javascript html css, curso e video guanabara 
+                html css javascript logica de progamaçao. 
+            </p>
         </div>
-    </section>
-    <!-- -------about-end------ -->
+    </div>
+</section>
+<!-- -------about-end------ -->
 
 
-    <!-- -------project------ -->
-    <section>
-        <div class="container project">
-            <div class="project-title">
-                <h1>Projects</h1>
-            </div>
-            <div class="projects-area">
-                <div class="projeto 1">
-                    <a href="https://page-shoes.vercel.app/" target="_blank"><img src="./assets/images/site bootstrap.png" class="media-object  img-responsive img-thumbnail"></a>
-                    <div class="projeto-title">Site com bootstrap</div>
-                </div>
-                <div class="projeto 1">
-                    <a href="https://page-login-rho.vercel.app/" target="_blank"><img src="./assets/images/pagelogin.png" class="media-object  img-responsive img-thumbnail"></a>
-                    <div class="projeto-title">Pagina Login</div>
-                </div>
-                <div class="projeto 3">
-                    <a href="https://java-script-gam-logic.vercel.app/" target="_blank"><img src="./assets/images/jogojava.png" class="media-object  img-responsive img-thumbnail"></a>
-                    <div class="projeto-title">Logica Java</div>
-                </div>
-                <div class="projeto p4">Em Breve</div>
-                <div class="projeto p5">Em Breve</div>
-                <div class="projeto p6">Em Breve</div>
-            </div>
+<!-- -------project------ -->
+<section id="projeto">
+    <div class="container project">
+        <div class="project-title">
+            <h1>Projects</h1>
         </div>
-    </section>
-    <!-- -------project-end------ -->
+        <div class="projects-area">
+            <div class="projeto 1">
+                <a href="https://page-shoes.vercel.app/" target="_blank"><img src="./assets/images/site bootstrap.png" class="media-object  img-responsive img-thumbnail"></a>
+                <div class="projeto-title">Site com bootstrap</div>
+            </div>
+            <div class="projeto 1">
+                <a href="https://page-login-rho.vercel.app/" target="_blank"><img src="./assets/images/pagelogin.png" class="media-object  img-responsive img-thumbnail"></a>
+                <div class="projeto-title">Pagina Login</div>
+            </div>
+            <div class="projeto 3">
+                <a href="https://java-script-gam-logic.vercel.app/" target="_blank"><img src="./assets/images/jogojava.png" class="media-object  img-responsive img-thumbnail"></a>
+                <div class="projeto-title">Logica Java</div>
+            </div>
+            <div class="projeto p4">Em Breve</div>
+            <div class="projeto p5">Em Breve</div>
+            <div class="projeto p6">Em Breve</div>
+        </div>
+    </div>
+</section>
+<!-- -------project-end------ -->
 
-
-    <!-- -------footer------ -->
-    <footer>
-        <div><h3>Copy®️ Ederson Henrique Oliveira Santos</h3></div> 
-    </footer>
-    <!-- -------footer-end------ -->
-
-
-    <script src="index.html"></script>
+<!-- -------footer------ -->
+<footer>
+    <div><h3 style="font-size: 12px;">Copy®️ Ederson Henrique Oliveira Santos</h3></div> 
+</footer>
+<!-- -------footer-end------ -->
+<script src="index.html"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
