@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&display=swap');
-
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +24,7 @@ a {
     background-color: rgb(19, 19, 31);
     font-family:'Oswald';
     font-weight:600;
+    border-bottom: 1px solid #fff;
 }
 .navLink {
     display: block;
@@ -37,6 +37,10 @@ a {
     background: 0 0;
     border: 0;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+.navLink:hover{
+    font-size: 21px;
+    color: rgb(185, 185, 185);
 }
 /*--------------menu-end-------------*/
 
@@ -64,6 +68,7 @@ a {
     color: #fff;
     font-size: 40px;
     padding-bottom: 30px;
+    cursor: default;
 }
 .home-left p{
     text-shadow: 2px 2px 2px #000;
@@ -71,6 +76,7 @@ a {
     font-weight: 600;
     font-size: 20px;
     color: blueviolet;
+    cursor: default;
 } 
 .home-left p span{
     text-shadow: 2px 2px 2px #000;
@@ -78,27 +84,14 @@ a {
     font-weight: 500;
     font-size: 20px;
     color: rgb(0, 204, 255);
+    cursor: default;
 } 
-.home-left p span:nth-child(2) {
-    color: rgb(255, 0, 85);
-}
-.home-left p span:nth-child(3) {
-    color: rgb(255, 238, 0);
-}
-.home-left p span:nth-child(4) {
-    color: rgb(0, 4, 240);
-}
-.home-left p span:nth-child(5) {
-    color: rgb(30, 255, 0);
-}
 .home--links {
     display: flex;
     justify-content: center;
 }
 .home--links img{
     height: 40px;
-    margin-top: 20px;
-    margin-right: 20px;
 }
 .home-right {
     height: calc(100vh - 70px);
@@ -115,6 +108,19 @@ a {
 
     border: 1px solid #fff;
     border-radius: 650px;
+}
+.linkSociais {
+    height: 60px;
+    width: 60px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.linkSociais:hover {
+    background-color: rgba(58, 0, 133, 0.062);
+    border-radius: 10px;
+    border: 1px solid #fff;
 }
 /*--------------Home-banner-end-------------*/
 
@@ -178,7 +184,7 @@ a {
 }
 .projeto-title {
     position: relative;
-    background-color: #000;
+    background-color: #203b6d;
     margin-top: -30px;
     color: #fff;
 
